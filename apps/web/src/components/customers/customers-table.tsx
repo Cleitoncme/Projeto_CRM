@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import type {
   Customer,
   CustomerErpStatus,
-} from "@/types/customer";
+} from "@/types/customers";
 
 interface CustomersTableProps {
   customers: Customer[];
