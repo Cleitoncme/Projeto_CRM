@@ -1,9 +1,6 @@
 "use client";
 
-import {
-  Filter,
-  Search,
-} from "lucide-react";
+import { Filter, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/inputs";
@@ -15,17 +12,16 @@ export function CustomersToolbar() {
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
 
         <Input
+          type="search"
           placeholder="Buscar por cliente, CNPJ ou CPF..."
           className="pl-10"
         />
       </div>
 
-      <div className="flex gap-2">
-        <Button variant="outline">
-          <Filter className="h-4 w-4" />
-          Filtros
-        </Button>
-      </div>
+      <Button variant="outline">
+        <Filter className="h-4 w-4" />
+        Filtros
+      </Button>
     </div>
   );
 }

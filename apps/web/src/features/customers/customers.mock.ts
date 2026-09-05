@@ -1,4 +1,4 @@
-import type { Customer } from "@/types/customer";
+import type { Customer } from "@/types/customers";
 
 export const customersMock: Customer[] = [
   {
